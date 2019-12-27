@@ -6,6 +6,6 @@ html = open("https://flatironschool.com/")
 doc = Nokogiri::HTML(html)
 
 courses = doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid2-3jXtmC")
-puts courses[0].name
+puts courses[0].attributes
 
 # courses.each {|course| puts course.text.strip }
